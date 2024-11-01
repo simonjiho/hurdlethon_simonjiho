@@ -1,0 +1,91 @@
+/* 전체 배경색과 텍스트 색상 설정 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+/* 제목 스타일링 */
+header h1 {
+    font-size: 2em;
+    color: #b22222; /* 다크 레드 */
+    margin-bottom: 5px;
+}
+
+header h4 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* 입력 필드와 버튼 스타일 */
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* 입력 필드에 포커스 시 테두리 강조 */
+input:focus {
+    border-color: #b22222;
+    box-shadow: 0 0 5px rgba(178, 34, 34, 0.3);
+}
+
+/* 버튼 스타일 */
+button {
+    cursor: pointer;
+    background-color: #b22222;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b1a1a;
+}
+
+/* income-form과 input-wrapper 스타일 */
+.income-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+
+/* '원' 텍스트 스타일 */
+.currency {
+    color: green;
+    font-size: 1em;
+    pointer-events: none;
+}
+
+/* 숫자 조절 버튼 숨기기 */
+input[id="income"]::-webkit-outer-spin-button,
+input[id="income"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield; /* Firefox에서 스피너 버튼 숨기기 */
+    margin: 0;
+}
+
+/* income 입력 필드 스타일 */
+input[id="income"] {
+    color: green;
+    text-align: right; /* 숫자를 오른쪽 정렬 */
+    width: 200px;
+}
+
+/* 폼 전체 스타일 */
+form {
+    display: flex;
+    gap: 10px;
+}
